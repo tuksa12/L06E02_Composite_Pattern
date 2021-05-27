@@ -16,7 +16,8 @@ public class Supervisor extends Employee{
     public void list(int level) {
         printName(level);
         for (int i = 0; i < supervisedEmployees.size(); i++) {
-            supervisedEmployees.get(i).printName(level);
+            //supervisedEmployees.get(i).printName(level);
+            supervisedEmployees.get(i).list(i);
         }
     }
 
