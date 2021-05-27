@@ -15,7 +15,9 @@ public class Supervisor extends Employee{
     @Override
     public void list(int level) {
         printName(level);
-        printName(level + 1);
+        for (int i = 0; i < supervisedEmployees.size(); i++) {
+            supervisedEmployees.get(i).printName(level);
+        }
     }
 
     public void addEmployee(Employee employee){
@@ -24,6 +26,10 @@ public class Supervisor extends Employee{
 
     public void fireEmployee(Employee employee){
         supervisedEmployees.remove(employee);
+    }
+
+    public List<Employee> getSupervisedEmployees() {
+        return supervisedEmployees;
     }
 
     // TODO 3: Implement list() for Supervisor
