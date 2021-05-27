@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 // TODO 1: Implement the Supervisor class
-public class Supervisor extends Employee{
-    private List<Employee> supervisedEmployees;
+public class Supervisor extends Employee {
+    private final List<Employee> supervisedEmployees;
 
     public Supervisor(String name) {
         super(name);
@@ -21,11 +21,11 @@ public class Supervisor extends Employee{
         }
     }
 
-    public void addEmployee(Employee employee){
+    public void addEmployee(Employee employee) {
         supervisedEmployees.add(employee);
     }
 
-    public void fireEmployee(Employee employee){
+    public void fireEmployee(Employee employee) {
         supervisedEmployees.remove(employee);
     }
 
