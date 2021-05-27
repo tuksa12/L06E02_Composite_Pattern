@@ -8,7 +8,7 @@ public final class EmployeeOverviewSystem {
 	public static void main(String[] args) {
 		
 		// TODO 3: Uncomment the following code for testing
-		/*
+
 		Supervisor ceo = new Supervisor("Chief Zed");
 		ceo.addEmployee(new Worker("Molly Wright"));
 		ceo.addEmployee(new Worker("Derrick Cunningham"));
@@ -20,7 +20,7 @@ public final class EmployeeOverviewSystem {
 		ceo.addEmployee(supervisor1);
 
 		ceo.list(0);
-		 */
+
 	}
 
 }
